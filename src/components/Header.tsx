@@ -4,11 +4,11 @@ export const Header = () => {
   const [isDarkMode, setIsDarkMode] = useState<boolean>(true);
 
   return (
-    <header className="bg-neutral-900 text-white flex justify-between p-5 rounded-2xl w-[85%]">
+    <header className="bg-neutral-900 text-white flex justify-between p-5 rounded-2xl w-full">
       <div className="flex items-center gap-2">
         <img src="/assets/images/logo.svg" alt="logo" />
 
-        <h1 className="font-bold text-2xl">Extension</h1>
+        <h1 className="font-bold text-2xl font-noto">Extension</h1>
       </div>
 
       <button

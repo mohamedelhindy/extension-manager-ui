@@ -16,6 +16,9 @@
 
   --background-image-light: linear-gradient(180deg, #ebf2fc 0%, #eef8f9 100%);
   --background-image-dark: linear-gradient(180deg, #040918 0%, #091540 100%);
+
+  --font-work: "Work Sans", sans-serif;
+  --font-noto: "Noto Sans", sans-serif;
 }
 
 /* Design tokens */
