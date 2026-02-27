@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+@theme {
+  --color-neutral-900: #1a1f2e;
+  --color-neutral-800: #2c3240;
+  --color-neutral-700: #3a4152;
+  --color-neutral-600: #5c6784;
+  --color-neutral-300: #c5c5c5;
+  --color-neutral-200: #e0e0e0;
+  --color-neutral-100: #f0f0f0;
+  --color-neutral-50: #ffffff;
+
+  --color-red-400: #ff6b6b;
+  --color-red-500: #ff5252;
+  --color-red-700: #ff3d3d;
+
+  --background-image-light: linear-gradient(180deg, #ebf2fc 0%, #eef8f9 100%);
+  --background-image-dark: linear-gradient(180deg, #040918 0%, #091540 100%);
+}
+
+/* Design tokens */
+/* - **Mobile**: 375px
+   - **Desktop**: 1440px
+   
+   ### Body Copy
+   - **Font size (paragraph)**: 16px
+   
+   ### Font
+   - **Family**: [Noto Sans](https://fonts.google.com/noto/specimen/Noto+Sans)
+   - **Weights**: 400, 500, 700
+*/
