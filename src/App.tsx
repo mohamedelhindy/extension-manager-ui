@@ -1,4 +1,4 @@
-import { Header, StateFilter } from "./components";
+import { ExtensionListContainer, Header, StateFilter } from "./components";
 
 const App = () => {
   return (
@@ -10,6 +10,10 @@ const App = () => {
           <h2 className="text-4xl font-noto font-semibold">Extensions List</h2>
 
           <StateFilter />
+        </div>
+
+        <div className="">
+          <ExtensionListContainer />
         </div>
       </main>
     </>
