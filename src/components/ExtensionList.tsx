@@ -1,3 +1,4 @@
+import { useState } from "react";
 import type { ExtensionListProps } from "../type";
 
 export const ExtensionList = ({
@@ -24,10 +25,23 @@ export const ExtensionList = ({
           Remove
         </button>
 
-        <div className="bg-red-700 w-10 h-5 rounded-full flex items-center">
-          <div className="w-5 h-full bg-olive-50 rounded-full m-0.5"></div>
-        </div>
+        <ButtonToggle />
       </div>
     </div>
+  );
+};
+
+const ButtonToggle = () => {
+  const [isActive, setIsActive] = useState(false);
+
+  return (
+    <button
+      onClick={() => setIsActive(!isActive)}
+      className={`w-9 h-5 rounded-full flex items-center cursor-pointer transition-colors duration-700 ${isActive ? "bg-neutral-300" : "bg-red-700"}`}
+    >
+      <div
+        className={`w-4 h-4 rounded-full m-0.5 bg-neutral-50 transition-transform duration-300 ${isActive ? "translate-x-0" : "translate-x-4"}`}
+      ></div>
+    </button>
   );
 };

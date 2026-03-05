@@ -12,7 +12,7 @@ export const Header = () => {
       </div>
 
       <button
-        className="bg-neutral-700 p-3.5 flex items-center justify-center rounded-xl"
+        className="bg-neutral-700 p-3.5 flex items-center justify-center rounded-xl cursor-pointer"
         onClick={() => setIsDarkMode(!isDarkMode)}
       >
         <img
