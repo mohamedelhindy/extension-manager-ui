@@ -1,8 +1,4 @@
-interface ExtensionListProps {
-  image: string;
-  header: string;
-  details: string;
-}
+import type { ExtensionListProps } from "../type";
 
 export const ExtensionList = ({
   image,

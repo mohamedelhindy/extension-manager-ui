@@ -1,4 +1,4 @@
-export const extensionsData = [
+export const extensions = [
   {
     image: "/assets/images/logo-devlens.svg",
     header: "DevLens",
