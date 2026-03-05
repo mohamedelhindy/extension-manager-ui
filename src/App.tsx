@@ -1,4 +1,7 @@
-import { ExtensionListContainer, Header, StateFilter } from "./components";
+import { Header, StateFilter } from "./components";
+import { ExtensionList } from "./components/ExtensionList";
+import { extensions } from "./const";
+import type { ExtensionListProps } from "./type";
 
 const App = () => {
   return (
@@ -12,7 +15,9 @@ const App = () => {
           <StateFilter />
         </div>
         <div className="grid gap-3 grid-cols-[repeat(auto-fit,minmax(320px,1fr))]">
-          <ExtensionListContainer />
+          {extensions.map((props: ExtensionListProps, index) => {
+            return <ExtensionList key={index} {...props} />;
+          })}
         </div>
       </main>
     </>

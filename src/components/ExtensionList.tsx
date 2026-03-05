@@ -32,7 +32,7 @@ export const ExtensionList = ({
 };
 
 const ButtonToggle = () => {
-  const [isActive, setIsActive] = useState(false);
+  const [isActive, setIsActive] = useState<boolean>(false);
 
   return (
     <button
